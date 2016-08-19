@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+/* 基本全頁設定 */
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+	body {
+		line-height: 1;
+        -webkit-text-size-adjust: none;
+        -ms-overflow-style: scrollbar;
+	}
+	@-ms-viewport {
+		width: device-width;
+	}
+	@media screen and (max-width: 480px) {
+
+		html, body {
+			min-width: 320px;
+		}
+	}
+	body {
+		background: #f4f4f4;
+	}
+
+    body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+		}
+	body {
+		background-color: #f4f4f4;
+		color: #666666;
+        font-family: "Source Sans Pro",sans-serif;
+		font-size: 17pt;
+		font-weight: 200;
+		line-height: 1.65;
+	}
+
+     	@media screen and (max-width: 1680px) {
+
+			body{
+				font-size: 13pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			body{
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			body{
+				font-size: 11pt;
+			}
+
+		}
+
+/* Header */
+
+	#header {
+		background-color: #444;
+		color: rgba(255, 255, 255,0.9);
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		padding: 8em 0 6em 0;
+		background-image: url(../images/index_1.JPG);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		text-align: center;
+		position: relative;
+		cursor: default;
+	}
+
+		#header a {
+			color: inherit;
+		}
+
+			#header a:hover {
+				color:#005588;!important;
+			}
+		#header:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			
+			
+		}
+
+		#header h1 {
+			margin-bottom: 0.5em;
+		}
+		#header .inner {
+			position: relative;
+			z-index: 1;
+		}
+        #header.main {
+			height: 35em;
+		}
+
+			#header.main:before {
+				-moz-transition: background-color 3s ease;
+				-webkit-transition: background-color 3s ease;
+				-ms-transition: background-color 3s ease;
+				transition: background-color 3s ease;
+				-moz-transition-delay: 1s;
+				-webkit-transition-delay: 1s;
+				-ms-transition-delay: 1s;
+				transition-delay: 1s;
+			}
+
+			#header.main h1 {
+				font-size: 4em;
+				padding: 0 0.5em 0.25em 0.5em;
+				border-bottom: solid 2px #ffffff;
+				font-weight: 200;
+				font-family: "Pacifico", cursive;
+				text-transform: none;
+				letter-spacing: 0;
+			}
+
+			#header.main p {
+                
+				text-transform: uppercase;
+				letter-spacing: 0.325em;
+				font-weight: 600;
+				font-size: 0.8em;
+				padding: 0 2.25em;
+			}
+
+			#header.main .inner {
+				-moz-transition: opacity 2s ease;
+				-webkit-transition: opacity 2s ease;
+				-ms-transition: opacity 2s ease;
+				transition: opacity 2s ease;
+				opacity: 1;
+			}
+
+		body.is-loading #header.main:before {
+			background-color: black;
+		}
+
+		body.is-loading #header.main .inner {
+			opacity: 0;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#header {
+				background-attachment: scroll;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#header {
+				padding: 4em 2em 2em 2em;
+			}
+
+				#header.main h1 {
+					font-size: 2.5em;
+					padding-left: 0;
+					padding-right: 0;
+				}
+
+				#header.main p {
+					padding: 0;
+				}
+
+				#header.main .inner {
+					max-width: 20em;
+				}
+
+		}
+
+/* Footer */
+
+	#footer {
+		position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+	}
+		#footer a {
+			color: inherit;
+            text-decoration: none;
+        }
+
+		
